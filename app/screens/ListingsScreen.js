@@ -1,9 +1,10 @@
-import React from "react";
-import { FlatList, StyleSheet } from "react-native";
+import React from "react"
+import { FlatList, StyleSheet } from "react-native"
 
-import Card from "../components/Card";
-import colors from "../config/colors";
-import Screen from "../components/Screen";
+import Card from "../components/Card"
+import colors from "../config/colors"
+import Screen from "../components/Screen"
+import routes from "../navigation/routes"
 
 const listings = [
   {
@@ -18,9 +19,9 @@ const listings = [
     price: 1000,
     image: require("../assets/couch.jpg"),
   },
-];
+]
 
-function ListingsScreen(props) {
+function ListingsScreen({ navigation }) {
   return (
     <Screen style={styles.screen}>
       <FlatList
@@ -31,18 +32,22 @@ function ListingsScreen(props) {
             title={item.title}
             subTitle={"$" + item.price}
             image={item.image}
+            onPress={() => navigation.navigate(routes.LISTING_DETAILS, item)}
           />
         )}
       />
     </Screen>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   screen: {
-    padding: 20,
+    paddingLeft: 5,
+    paddingRight: 5,
+    paddingTop: 20,
+    paddingBottom: 10,
     backgroundColor: colors.light,
   },
-});
+})
 
-export default ListingsScreen;
+export default ListingsScreen
