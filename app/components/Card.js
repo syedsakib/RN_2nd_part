@@ -26,7 +26,8 @@ function Card({ title, subTitle, imageUrl, onPress }) {
 const styles = StyleSheet.create({
   card: {
     borderRadius: 15,
-    backgroundColor: colors.white,
+    //backgroundColor: colors.white,
+    backgroundColor: colors.light,
     marginBottom: 20,
     overflow: "hidden"
   },

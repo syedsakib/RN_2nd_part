@@ -66,7 +66,8 @@ const styles = StyleSheet.create({
     paddingRight: 5,
     paddingTop: 20,
     paddingBottom: 10,
-    backgroundColor: colors.light
+    // backgroundColor: colors.light
+    backgroundColor: colors.white
   }
 });
 
