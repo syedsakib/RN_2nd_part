@@ -1,16 +1,16 @@
-import React from "react"
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
-import { MaterialCommunityIcons } from "@expo/vector-icons"
+import React from "react";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-import ListingsScreen from "../screens/ListingsScreen"
-import ListingEditScreen from "../screens/ListingEditScreen"
-import AccountScreen from "../screens/AccountScreen"
+import ListingsScreen from "../screens/ListingsScreen";
+import ListingEditScreen from "../screens/ListingEditScreen";
+import AccountScreen from "../screens/AccountScreen";
 
-import FeedNavigator from "./FeedNavigator"
-import AccountNavigator from "./AccountNavigator"
-import NewListingButton from "./NewListingButton"
+import FeedNavigator from "./FeedNavigator";
+import AccountNavigator from "./AccountNavigator";
+import NewListingButton from "./NewListingButton";
 
-const Tab = createBottomTabNavigator()
+const Tab = createBottomTabNavigator();
 
 const AppNavigator = () => (
   <Tab.Navigator>
@@ -20,7 +20,7 @@ const AppNavigator = () => (
       options={{
         tabBarIcon: ({ color, size }) => (
           <MaterialCommunityIcons name="home" color={color} size={size} />
-        ),
+        )
       }}
     />
     <Tab.Screen
@@ -38,7 +38,7 @@ const AppNavigator = () => (
             color={color}
             size={size}
           />
-        ),
+        )
       })}
     />
     <Tab.Screen
@@ -47,10 +47,10 @@ const AppNavigator = () => (
       options={{
         tabBarIcon: ({ color, size }) => (
           <MaterialCommunityIcons name="account" color={color} size={size} />
-        ),
+        )
       }}
     />
   </Tab.Navigator>
-)
+);
 
-export default AppNavigator
+export default AppNavigator;
