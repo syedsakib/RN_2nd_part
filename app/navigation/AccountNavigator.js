@@ -1,10 +1,10 @@
-import React from "react"
-import { createStackNavigator } from "@react-navigation/stack"
+import React from "react";
+import { createStackNavigator } from "@react-navigation/stack";
 
-import AccountScreen from "../screens/AccountScreen"
-import MessagesScreen from "../screens/MessagesScreen"
+import AccountScreen from "../screens/AccountScreen";
+import MessagesScreen from "../screens/MessagesScreen";
 
-const Stack = createStackNavigator()
+const Stack = createStackNavigator();
 
 const AccountNavigator = () => (
   <Stack.Navigator mode="modal">
@@ -19,6 +19,6 @@ const AccountNavigator = () => (
       //   options={{ headerShown: false }}
     />
   </Stack.Navigator>
-)
+);
 
-export default AccountNavigator
+export default AccountNavigator;

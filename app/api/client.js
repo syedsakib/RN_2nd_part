@@ -13,8 +13,11 @@ import axios from "axios";
 //   }
 // });
 
+// /http://192.168.26.226
+//http://192.168.6.162
+
 const apiClient = axios.create({
-  baseURL: "http://192.168.26.226:8000/api",
+  baseURL: "http://192.168.6.162:8000/api",
   headers: {
     "Content-type": "application/json",
     //Authorization: `Bearer ${token}`,
